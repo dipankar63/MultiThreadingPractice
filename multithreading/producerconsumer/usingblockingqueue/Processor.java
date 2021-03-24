@@ -10,7 +10,7 @@ public class Processor {
 
 	public void produce() throws InterruptedException {
 		System.out.println("Producing...");
-	    Random random = new Random();
+	    	Random random = new Random();
 		while (true) {
 			queue.put(random.nextInt(10));
 			System.out.println("Queue size after adding: " + queue.size());
